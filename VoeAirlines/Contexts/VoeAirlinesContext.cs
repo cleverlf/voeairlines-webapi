@@ -6,6 +6,12 @@ namespace VoeAirlines.Contexts
     
     public class VoeAirlinesContext : DbContext
     {
+
+        private readonly IConfiguration _configuration;
+        public VoeAirlinesContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }        
         
         public DbSet<Aeronave> Aeronaves => Set<Aeronave>();
         public DbSet<Cancelamento> Cancelamentos => Set<Cancelamento>();
@@ -15,7 +21,8 @@ namespace VoeAirlines.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {            
-            optionsBuilder.UseSqlServer("Password=teste*123;Persist Security Info=True;User ID=sa;Initial Catalog=master;Data Source=Lab206_17");
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("VoeAirlines"));
         }
+
     }
 }
