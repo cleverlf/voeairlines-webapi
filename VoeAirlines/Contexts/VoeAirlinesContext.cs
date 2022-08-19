@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VoeAirlines.Entities;
+using VoeAirlines.EntityConfigurations;
 
 namespace VoeAirlines.Contexts
 {
@@ -24,5 +25,13 @@ namespace VoeAirlines.Contexts
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("VoeAirlines"));
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AeronaveConfiguration());
+            modelBuilder.ApplyConfiguration(new CancelamentoConfiguration());
+            modelBuilder.ApplyConfiguration(new ManutencaoConfiguration());
+            modelBuilder.ApplyConfiguration(new PilotoConfiguration());
+            modelBuilder.ApplyConfiguration(new VooConfiguration());
+        }
     }
 }

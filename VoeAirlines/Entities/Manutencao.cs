@@ -9,13 +9,13 @@ namespace VoeAirlines.Entities
 
             DataHora = dataHora;            
             AeronaveId = aeronaveId;
-            this.tipoManutencao = tipoManutencao;
+            this.TipoManutencao = tipoManutencao;
             Observacao = observacao;
         }
         
         public int Id { get; set; }
         public DateTime DataHora { get; set; }
-        public TipoManutencao tipoManutencao { get; set; }
+        public TipoManutencao TipoManutencao { get; set; }
         public string? Observacao { get; set; }
         public int AeronaveId { get; set; }
        
