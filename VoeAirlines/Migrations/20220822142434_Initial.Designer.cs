@@ -12,7 +12,7 @@ using VoeAirlines.Contexts;
 namespace VoeAirlines.Migrations
 {
     [DbContext(typeof(VoeAirlinesContext))]
-    [Migration("20220819220742_Initial")]
+    [Migration("20220822142434_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
