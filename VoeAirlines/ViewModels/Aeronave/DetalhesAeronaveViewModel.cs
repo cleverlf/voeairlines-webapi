@@ -14,5 +14,9 @@
             Modelo = modelo;
             Codigo = codigo;
         }
+
+        public DetalhesAeronaveViewModel()
+        {
+        }
     }
 }
