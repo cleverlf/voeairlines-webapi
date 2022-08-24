@@ -20,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="ViewModels\Cancelamento\" />
+    <Folder Include="ViewModels\Manutencao\" />
+    <Folder Include="ViewModels\Voo\" />
+    <Folder Include="ViewModels\Piloto\" />
   </ItemGroup>
 
 </Project>
