@@ -15,6 +15,7 @@ builder.Services.AddTransient<AeronaveService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -19,13 +19,13 @@ namespace VoeAirlines.Controllers
         public IActionResult AdicionarAeronave(AdicionarAeronaveViewModel dados)
         {
             var aeronave = _aeronaveService.AdicionarAeronave(dados);
-            return Ok(aeronave);
+            return Ok(aeronave);            
         }
 
         [HttpPut]
-        public IActionResult AtualizarAeronave(AtualizarAeronaveViewModel dados)
+        public IActionResult AtualizarAeronave(int id, AtualizarAeronaveViewModel dados)
         {
-            var aeronave = _aeronaveService.AtualizarAeronave(dados);
+            var aeronave = _aeronaveService.AtualizarAeronave(id, dados);
             return Ok(aeronave);
         }
 
@@ -35,7 +35,14 @@ namespace VoeAirlines.Controllers
             var aeronave = _aeronaveService.ListarAeronaves();
             return Ok(aeronave);
         }
-        [HttpDelete]
+        [HttpGet("{id:int}")]
+        public IActionResult ListarAeronavesPorId(int id)
+        {
+            var aeronave = _aeronaveService.ListarAeronavePorId(id);
+            return Ok(aeronave);
+        }
+
+        [HttpDelete("{id:int}")]
         public IActionResult RemoverAeronave(int id)
         {
             var aeronave = _aeronaveService.RemoverAeronave(id);

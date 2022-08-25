@@ -7,9 +7,8 @@
         public string Modelo { get; set; }
         public string Codigo { get; set; }
 
-        public AtualizarAeronaveViewModel(int id, string fabricante, string modelo, string codigo)
-        {
-            Id = id;
+        public AtualizarAeronaveViewModel(string fabricante, string modelo, string codigo)
+        {            
             Fabricante = fabricante;
             Modelo = modelo;
             Codigo = codigo;
