@@ -35,7 +35,7 @@ namespace VoeAirlines.Controllers
             var aeronave = _aeronaveService.ListarAeronaves();
             return Ok(aeronave);
         }
-
+        [HttpDelete]
         public IActionResult RemoverAeronave(int id)
         {
             var aeronave = _aeronaveService.RemoverAeronave(id);

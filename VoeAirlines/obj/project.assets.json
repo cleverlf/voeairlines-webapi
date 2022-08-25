@@ -2226,23 +2226,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Desk\\.nuget\\packages\\": {},
+    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\VoeAirlines.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\VoeAirlines.csproj",
       "projectName": "VoeAirlines",
-      "projectPath": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\VoeAirlines.csproj",
-      "packagesPath": "C:\\Users\\Desk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\obj\\",
+      "projectPath": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\VoeAirlines.csproj",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Desk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
