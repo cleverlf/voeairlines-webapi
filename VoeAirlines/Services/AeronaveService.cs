@@ -24,27 +24,23 @@ namespace VoeAirlines.Services
             return new DetalhesAeronaveViewModel(aeronave.Id, aeronave.Fabricante, aeronave.Modelo, aeronave.Codigo);
         }
 
-        public DetalhesAeronaveViewModel AtualizarAeronave(int id, AtualizarAeronaveViewModel dados)
+        public DetalhesAeronaveViewModel? AtualizarAeronave(int id, AtualizarAeronaveViewModel dados)
         {
             var aeronaveParaAtualizar = _context.Aeronaves.Find(id);
-
-            if (aeronaveParaAtualizar == null)
-            {
-                return new DetalhesAeronaveViewModel();
-            }
-            else
+            if (aeronaveParaAtualizar != null)
             {
                 if (id == aeronaveParaAtualizar.Id)
                 {
-                    var aerovaveAtualizada = new AtualizarAeronaveViewModel(dados.Fabricante, dados.Modelo, dados.Codigo);
-                    _context.Update(aerovaveAtualizada);
+                    aeronaveParaAtualizar.Fabricante = dados.Fabricante;
+                    aeronaveParaAtualizar.Modelo = dados.Modelo;
+                    aeronaveParaAtualizar.Codigo = dados.Codigo;
+                    _context.Update(aeronaveParaAtualizar);
                     _context.SaveChanges();
+                    return new DetalhesAeronaveViewModel(aeronaveParaAtualizar.Id, aeronaveParaAtualizar.Fabricante, aeronaveParaAtualizar.Modelo, aeronaveParaAtualizar.Codigo);
                 }
-                
-            }    
-
-            return new DetalhesAeronaveViewModel(aeronaveParaAtualizar.Id, aeronaveParaAtualizar.Fabricante, aeronaveParaAtualizar.Modelo, aeronaveParaAtualizar.Codigo);
-
+               
+            }
+            return null;
         }
 
         public IEnumerable<ListarAeronavesViewModel> ListarAeronaves()
@@ -53,12 +49,12 @@ namespace VoeAirlines.Services
             
         }
 
-        public DetalhesAeronaveViewModel? ListarAeronavePorId(int id)
+        public ListarAeronavesViewModel? ListarAeronavePorId(int id)
         {
             var aeronave = _context.Aeronaves.Find(id);
             if (aeronave != null)
             {
-                return new DetalhesAeronaveViewModel(aeronave.Id,aeronave.Fabricante,aeronave.Modelo,aeronave.Codigo);
+                return new ListarAeronavesViewModel(aeronave.Id,aeronave.Fabricante,aeronave.Modelo,aeronave.Codigo);
             }
             return null;
         }
@@ -67,10 +63,14 @@ namespace VoeAirlines.Services
         {
             var aeronavaParaRemover = _context.Aeronaves.Find(id);
             if (aeronavaParaRemover != null)
-            {            
-                _context.Aeronaves.Remove(aeronavaParaRemover);
-                _context.SaveChanges();
-                return new DetalhesAeronaveViewModel(aeronavaParaRemover.Id, aeronavaParaRemover.Fabricante, aeronavaParaRemover.Modelo, aeronavaParaRemover.Codigo);
+            {
+                if (id == aeronavaParaRemover.Id)
+                {
+                    _context.Aeronaves.Remove(aeronavaParaRemover);
+                    _context.SaveChanges();
+                    return new DetalhesAeronaveViewModel(aeronavaParaRemover.Id, aeronavaParaRemover.Fabricante, aeronavaParaRemover.Modelo, aeronavaParaRemover.Codigo);
+                }
+                
             }
             return null;
             

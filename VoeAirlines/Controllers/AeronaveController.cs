@@ -22,9 +22,13 @@ namespace VoeAirlines.Controllers
             return Ok(aeronave);            
         }
 
-        [HttpPut]
+        [HttpPut("{id:int}")]
         public IActionResult AtualizarAeronave(int id, AtualizarAeronaveViewModel dados)
         {
+            //if (id != dados.Id)
+            //{
+            //    return BadRequest("O id informado na URL é diferente do id informado no corpo da requisição");
+            //}
             var aeronave = _aeronaveService.AtualizarAeronave(id, dados);
             return Ok(aeronave);
         }
@@ -39,7 +43,11 @@ namespace VoeAirlines.Controllers
         public IActionResult ListarAeronavesPorId(int id)
         {
             var aeronave = _aeronaveService.ListarAeronavePorId(id);
-            return Ok(aeronave);
+            if (aeronave != null)
+            {
+                return Ok(aeronave);
+            }
+            return NotFound();
         }
 
         [HttpDelete("{id:int}")]

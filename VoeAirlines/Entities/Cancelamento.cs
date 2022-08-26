@@ -2,10 +2,11 @@
 {
     public class Cancelamento
     {
-        public Cancelamento(string motivo, DateTime dataHoraNotificacao)
+        public Cancelamento(string motivo, DateTime dataHoraNotificacao, int vooId)
         {
             Motivo = motivo;
             DataHoraNotificacao = dataHoraNotificacao;
+            VooId = vooId;
         }
 
         public int Id { get; set; }

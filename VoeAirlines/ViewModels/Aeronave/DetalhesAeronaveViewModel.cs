@@ -13,10 +13,6 @@
             Fabricante = fabricante;
             Modelo = modelo;
             Codigo = codigo;
-        }
-
-        public DetalhesAeronaveViewModel()
-        {
-        }
+        }       
     }
 }
