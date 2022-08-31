@@ -120,3 +120,4 @@ C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\obj\Debug\net6.0\refin
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\obj\Debug\net6.0\VoeAirlines.pdb
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\obj\Debug\net6.0\VoeAirlines.genruntimeconfig.cache
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\obj\Debug\net6.0\ref\VoeAirlines.dll
+C:\Users\Aluno\source\repos\VoeAirlines\VoeAirlines\bin\Debug\net6.0\DinkToPdf.dll
