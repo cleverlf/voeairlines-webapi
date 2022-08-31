@@ -9,6 +9,7 @@
       "VoeAirlines/1.0.0": {
         "dependencies": {
           "DinkToPdf": "1.0.8",
+          "DinkToPdfCopyDependencies": "1.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
@@ -35,6 +36,7 @@
           }
         }
       },
+      "DinkToPdfCopyDependencies/1.0.8": {},
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -1138,6 +1140,13 @@
       "sha512": "sha512-wJDlcNXjQ+OnBFwh3LBeAXgrXqlKl0RsgN60XpxEFbyqzdaG9ASb5HTXQjXQPaBguSCOrGZZESPnpcng34TEkw==",
       "path": "dinktopdf/1.0.8",
       "hashPath": "dinktopdf.1.0.8.nupkg.sha512"
+    },
+    "DinkToPdfCopyDependencies/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eJeXFfx/tyVG3nzUdNGGjDoKpF+7RqKTw4OE5Zr/afZI9LTtVbtMkGLxNmhdijKN3BlSYdap2CVZN8e4PaEdBA==",
+      "path": "dinktopdfcopydependencies/1.0.8",
+      "hashPath": "dinktopdfcopydependencies.1.0.8.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

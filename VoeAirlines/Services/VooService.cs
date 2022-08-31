@@ -101,20 +101,21 @@ namespace VoeAirlines.Services
                 if (voo.Cancelamento != null)
                 {
                     builder.Append($"<p style='color: red'><b>VOO CANCELADO:</b> {voo.Cancelamento.Motivo}</p>");
-                }
+                }                
 
                 var doc = new HtmlToPdfDocument()
                 {
                     GlobalSettings = {
                     ColorMode = ColorMode.Color,
                     Orientation = Orientation.Portrait,
-                    PaperSize = PaperKind.A4
+                    PaperSize = PaperKind.A4                    
                 },
                     Objects = {
                     new ObjectSettings() {
                         PagesCount = true,
                         HtmlContent = builder.ToString(),
                         WebSettings = { DefaultEncoding = "utf-8" }
+                        
                     }
                 }
                 };

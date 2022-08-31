@@ -55,9 +55,10 @@ namespace VoeAirlines.Controllers
         public IActionResult GerarFichaDoVoo(int id)
         {
             var conteudo = _vooService.GerarFichaDoVoo(id);
-
+            
+            
             if (conteudo != null)
-                return File(conteudo, "application/pdf");
+                return File(conteudo, "application/pdf", "relatorio.pdf");
 
             return NotFound();
         }

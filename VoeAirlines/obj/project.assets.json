@@ -24,6 +24,18 @@
           }
         }
       },
+      "DinkToPdfCopyDependencies/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard/DinkToPdf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard/DinkToPdf.dll": {}
+        },
+        "build": {
+          "build/DinkToPdfCopyDependencies.props": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -2024,6 +2036,22 @@
         "lib/netstandard1.6/DinkToPdf.dll",
         "lib/netstandard1.6/DinkToPdf.pdb",
         "lib/netstandard1.6/DinkToPdf.xml"
+      ]
+    },
+    "DinkToPdfCopyDependencies/1.0.8": {
+      "sha512": "eJeXFfx/tyVG3nzUdNGGjDoKpF+7RqKTw4OE5Zr/afZI9LTtVbtMkGLxNmhdijKN3BlSYdap2CVZN8e4PaEdBA==",
+      "type": "package",
+      "path": "dinktopdfcopydependencies/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DinkToPdfCopyDependencies.props",
+        "build/libwkhtmltox.dll",
+        "build/libwkhtmltox.dylib",
+        "build/libwkhtmltox.so",
+        "dinktopdfcopydependencies.1.0.8.nupkg.sha512",
+        "dinktopdfcopydependencies.nuspec",
+        "lib/netstandard/DinkToPdf.dll"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -6394,6 +6422,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "DinkToPdf >= 1.0.8",
+      "DinkToPdfCopyDependencies >= 1.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
@@ -6401,23 +6430,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
+    "C:\\Users\\Desk\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\VoeAirlines.csproj",
+      "projectUniqueName": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\VoeAirlines.csproj",
       "projectName": "VoeAirlines",
-      "projectPath": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\VoeAirlines.csproj",
-      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\source\\repos\\VoeAirlines\\VoeAirlines\\obj\\",
+      "projectPath": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\VoeAirlines.csproj",
+      "packagesPath": "C:\\Users\\Desk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Desk\\source\\repos\\voeairlines-webapi\\VoeAirlines\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Desk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6446,6 +6475,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "DinkToPdf": {
+            "target": "Package",
+            "version": "[1.0.8, )"
+          },
+          "DinkToPdfCopyDependencies": {
             "target": "Package",
             "version": "[1.0.8, )"
           },
