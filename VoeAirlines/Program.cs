@@ -18,6 +18,7 @@ builder.Services.AddTransient<ManutencaoService>();
 builder.Services.AddTransient<PilotoService>();
 builder.Services.AddTransient<VooService>();
 
+
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 
 var app = builder.Build();
@@ -29,6 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseHttpsRedirection();
 

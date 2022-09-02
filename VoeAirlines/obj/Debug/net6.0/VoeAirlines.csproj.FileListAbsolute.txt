@@ -125,3 +125,6 @@ C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\bin\Debug\net6.0\DinkT
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.dll
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.dylib
 C:\Users\Desk\source\repos\voeairlines-webapi\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.so
+C:\Users\Aluno\source\repos\VoeAirlines\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.dll
+C:\Users\Aluno\source\repos\VoeAirlines\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.dylib
+C:\Users\Aluno\source\repos\VoeAirlines\VoeAirlines\bin\Debug\net6.0\libwkhtmltox.so
